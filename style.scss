@@ -1,0 +1,301 @@
+body {
+    background-image: url("img/rio.jpg");
+    display: grid;
+    gap: 10px;
+}
+
+
+@media all and (min-width: 375px) and (max-width: 600px) {
+    body {
+        background-color: lightcoral;
+        grid-column: 1/span 3;
+        grid-template-rows: repeat(4, 150px);
+    }
+}
+
+
+
+.P {
+    font-family: 'Chewy Script', cursive;
+    font-size: 40px;
+    color: rgb(17, 1, 1);
+    position: center;
+    text-anchor: start;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration-line: none;
+    text-shadow: 2px 2px 5px red;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+}
+
+
+.noticias {
+    font-family: cursive;
+    font-size: larger;
+    text-anchor: end;
+    background-position: center;
+    background-color: rgb(201, 218, 218);
+    grid-column: auto;
+}
+
+header {
+    display: grid;
+    background-position: center;
+    margin: 10;
+    padding: 0;
+
+
+}
+
+
+ul {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(54, 187, 20);
+    grid-template-columns: auto auto auto auto auto;
+    grid-area: span;
+
+
+}
+
+div.gallery img :focus {
+    height: 40px;
+    background-color: aqua;
+    background-position-x: center;
+}
+
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    text-anchor: 2PX;
+    font-family: cursive;
+
+
+}
+
+.carousel-inner {
+    position: center;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: aquamarine;
+    position: relative;
+}
+
+div.gallery {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    grid-area: span;
+}
+
+
+div.gallery img {
+    width: 100%;
+    margin-top: 5px;
+    transition: 2s linear
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.container {
+    column-width: 250px;
+    column-gap: 20px;
+
+
+}
+
+.card {
+    background-color: rgb(207, 232, 220);
+    border: 12px solid rgb(79, 185, 227);
+    padding: 10px;
+    margin: 0 0 1em 0;
+    column-count: 3;
+    grid-area: span;
+
+
+}
+
+.card_1 {
+    background-color: rgb(207, 232, 220);
+    border: 12px solid rgb(79, 185, 227);
+    padding: 10px;
+    margin: 0 0 1em 0;
+
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.noticias__parrafo {
+    font-family: cursive;
+    font-size: larger;
+    text-anchor: middle;
+    background-position: center;
+    background-color: rgb(242, 248, 248);
+    grid-area: calc(1px, 2px);
+}
+
+footer {
+    padding: 0;
+    width: 100%;
+    color: #d9d9d9;
+    background-position-x: center;
+    bottom: 0px;
+    background: rgb(4, 150, 36);
+    display: flex;
+    align-content: flex-end;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    grid-area: span;
+
+}
+
+.main-content.box {
+    flex-basis: 50%;
+    padding: 10px 20px
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: cursive;
+    background-position: 2px;
+}
+
+.box {
+    margin: 20px 15px 0;
+
+}
+
+.left .content p {
+    text-align: justify;
+    text-decoration: solid;
+    text-transform: capitalize;
+}
+
+.left.social {
+    margin: 20px 0 0;
+
+}
+
+.left .social a {
+    padding: 0 2px;
+    text-decoration: #04AA6D;
+}
+
+.left .social a span {
+    height: 90px;
+    width: 90px;
+    background: local;
+    line-height: 90px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .social a span:hover {
+    background: #f12020;
+}
+
+form {
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: none;
+    display: grid;
+}
+
+@keyframes efecto {
+    0% {
+        width: 100 px;
+    }
+
+    12% {
+        width: 120 px;
+        background-color: rgb(221, 217, 6);
+    }
+
+    25% {
+        width: 300 px;
+    }
+
+    79% {
+        width: 200 px;
+    }
+
+    100% {
+        width: 100 px;
+    }
+
+
+
+}
